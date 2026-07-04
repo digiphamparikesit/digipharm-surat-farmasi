@@ -27,7 +27,12 @@
   ::selection{background:var(--teal-light);color:#fff;}
 
   .shell{max-width:1180px;margin:0 auto;padding:28px 24px 80px;}
-  .topbar{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;padding-bottom:22px;border-bottom:2px solid var(--teal-deep);margin-bottom:26px;}
+  .topbar{
+    display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;
+    padding:16px 0 22px;border-bottom:2px solid var(--teal-deep);margin-bottom:26px;
+    position:sticky;top:0;z-index:40;background:var(--paper);
+    box-shadow:0 10px 18px -14px rgba(14,65,60,0.25);
+  }
   .brand{display:flex;align-items:center;gap:14px;}
   .brand-mark{
     flex:none;border-radius:10px;background:var(--teal-deep);color:#EAF3F1;
